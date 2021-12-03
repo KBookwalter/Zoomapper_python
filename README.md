@@ -12,6 +12,9 @@ This python program is a resource to go along with ZooMonitor© and other animal
   - `heatmappage.py`: Plotting of graphs, highlighting points, and real time distance calculating on graph
   - `pages.py`: Frames for the different pages of the application
   - `error.py`: provides error messages for error handling
+  - `create_label_image.py`: Handles methods for adding image.
+  - `kerneldensity.py`: Kernel Density Arcpy related code.
+  - `miniboundary.py`: Minimum bounding geometry Arcpy related code.
 - `/src/main/saves`: contains save configurations of imports. Saves as `.json` files
 
 ### Required packages
@@ -24,12 +27,15 @@ The following Python packages are used in this application and are all found in 
 - `tkinter` version 0.1.0
 - `tksheet` version 5.0.25
 - `xlrd` version 1.2.0
+- `win32api`
 
 ## Setting up the program
-First, you will need to install a Python version newer than 3.6. We reccoment installing python version 3.9.5 as this was the newest version during our development. The instructions on how to install Python 3.9.5 for your device can be found [here](https://www.python.org/downloads/).
+First, you will need to install a Python version newer than 3.6. We reccoment installing python version 3.9.5 as this was the newest version during our development. The instructions on how to install Python 3.9.5 for your device can be found [here](https://www.python.org/downloads/). A Python 2.7 is also needed for arcpy, please download it from above link. You are allowed to install two version of python in the same computer.
+
+In order to use the gis-related function, a ARCGIS product with arcpy is required. Please find your path to pyhton.exe from your ARCGIS catalog and revise the path at the end of the heatmappage.py with your own path. Sometimes it causes a error when arcpy and zoomapper installed in the same disk.
 
 ### For Windows
-If you are using a Windows system, open up the command prompt (seach cmd in the serach bar). Start by cloning this repository by running `git clone repo_link_here`. Then do `cd sezarc` and press enter to move into the project directory. Here, execute the command `pip install -r requirements.txt`. This will install the required packages that were listed above. Now you are all set to get ready to run the application.
+If you are using a Windows system, open up the command prompt (seach cmd in the serach bar). Start by cloning this repository by running `git clone repo_link_here`. Then do `cd sezarc` and press enter to move into the project directory. Here, execute the command `pip install -r requirements.txt`. This will install the required packages that were listed above. If win32api is not installed, please use `pip install pywin32` to install it. Now you are all set to get ready to run the application.
 
 ### For Mac/Linux
 If you are using a Mac or Linux system, open a unix shell. Start by cloning this repository by running `git clone https://github.com/channum/Zoo-Mapper.git`. Then do `cd sezarc` and press enter to move into the project directory. Here, execute the command `pip install -r requirements.txt`. This will install the required packages that were listed above. Now you are all set to get ready to run the application.
