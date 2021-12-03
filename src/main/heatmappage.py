@@ -840,7 +840,7 @@ class StartPage(tk.Frame):
 
     def handle_button4_click(self):
         win32api.ShellExecute(0, 'open', 'C:\\Program Files (x86)\\ArcGIS\\ArcGIS10.2\\python.exe',
-                              'D:\\zoo-mapper\\src\\main\\MiniBoundary.py', '', 1)
+                              'D:\\zoo-mapper\\src\\main\\miniboundary.py', '', 1)
     def handle_button5_click(self):
             win32api.ShellExecute(0, 'open', 'C:\\Program Files (x86)\\ArcGIS\\ArcGIS10.2\\python.exe',
-                                  'D:\\zoo-mapper\\src\\main\\KernelDensity.py', '', 1)
+                                  'D:\\zoo-mapper\\src\\main\\kerneldensity.py', '', 1)
