@@ -1,0 +1,44 @@
+1.Delete Point
+
+All delete point code is in heatmappage.py.
+_Init_    line 157-160
+Delete_point_bind_button
+Delete_point_clickevent
+Dataset class, delx,dely, delz, del,color, delpoint
+Current problem: not working well when choosing the Name column
+
+2.Adding image and modification
+
+Create_image_label.py
+Heatmappahe.py line 248- 274
+
+Current problem: Resize not working smoothly, can’t rotate, and transparent.
+
+3. Minimum bounding Geometry
+
+Miniboundary.py
+Heatmappage.py
+Line 841-843 is about call python 2 from python 3
+https://pro.arcgis.com/en/pro-app/2.8/tool-reference/data-management/minimum-bounding-geometry.htm
+
+4. Kernel Density
+
+kerneldensity.py
+Heatmappage.py
+Line 844-846 is about call python 2 from python 3
+https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/how-kernel-density-works.htm
+
+
+All GIS-related function is based on Arcpy. Arcpy is a python library created by ERSI only in Python2.7, Zoomapper is based on python 3x. So the Arcpy is not fully compatible with Zoomapper. What we doing is writing functions with Arcpy, and calling python2 from pyhton3. In case to do that, you have to install both python2.7 and python3x on your computer. The function will generate a shapefile, but Zoomapper cannot display the shapefile now. The zoomapper must be modified to display the shapefile to work with the GIS function we have now. We suggest trying Qgis to write these functions. Qgis is based on python3x which will work better than ArcGIS in our case. 
+
+https://support.esri.com/en/technical-article/000013224
+
+https://gis.stackexchange.com/questions/351832/using-arcpy-with-python-3-7-instead-of-default-python-2-7-that-comes-with-arcmap
+
+https://stackoverflow.com/questions/27863832/calling-python-2-script-from-python-3
+
+https://desktop.arcgis.com/en/arcmap/10.3/manage-data/shapefiles/what-is-a-shapefile.htm#:~:text=A%20shapefile%20is%20a%20simple,%2C%20or%20polygons%20(areas).&text=You%20can%20also%20see%20the,be%20associated%20with%20a%20shapefile).
+
+https://doc.arcgis.com/en/arcgis-online/reference/shapefiles.htm
+
+
