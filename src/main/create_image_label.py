@@ -5,7 +5,7 @@ import tkinter as tk
 
 
 class DrawLabelImage(Canvas):
-    '''可调整大小、可移动的画布'''
+    '''A resizable, removable canvas'''
 
     def __init__(self, master=None, cnf={}, **kw):
         Canvas.__init__(self, master, cnf, **kw)
@@ -20,7 +20,7 @@ class DrawLabelImage(Canvas):
         self.start_root_x = 0
         self.start_root_y = 0
         self.on_resize_complete = None
-        self.have_child = False  # 用以辨别是否有组件创建
+        self.have_child = False  # To identify whether a component has been created
 
     def _mousedown(self, event):
         self.startx = event.x
@@ -141,12 +141,12 @@ class DrawLabelImage(Canvas):
         # self.bind("<B1-Motion>", self.drag, add='+')
 
     def create_widget(self, widget_class, cnf={}, **kw):
-        if self.have_child == True:  # 如果已经创建，则忽略
+        if self.have_child == True:  # If already create, ignore it
             return
         self.have_child = True
         self.widget = widget_class(self, cnf, **kw)
         self.widget.pack(fill='both', expand=True, pady=9, padx=9)
-        # 即使拖动组件，也可以移动
+        # You can move components even if you drag them
         self.widget.bind("<Button-1>", self.mousedown, add='+')
         self.widget.bind("<B1-Motion>", self.drag, add='+')
         self.widget.bind('<FocusOut>', lambda event: self.delete('all'))
