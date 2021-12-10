@@ -49,3 +49,5 @@ We have a few tutorial videos that can help you learn how to use the application
 - [Saving and Loading an Import](https://udel.zoom.us/rec/share/32WImZp6MNGgyktIQaTj68yvUDfJDmx7VVMOovH93ugVZmMoMgU8mflVTY-AZxdv.MQ0zBIGSD8YWWYkS?startTime=1622477688000)
 - [The Graph Page](https://udel.zoom.us/rec/share/lVjZzdUA_8LlPKqdI1Sis832SjrBP4Dgrp9Hyho4CiG7HQftJ6mjHsQ8-TfOjl3y.h1LNrsZTN2d3zNT1)
 - [Exporting Calculations](https://udel.zoom.us/rec/share/VCGKLe5nntcPSUNYJkbaEekL52scUIWGUSg2HzuWJL4pfsbGY5w8EI0WutgUqGer.UmCEEjVtGqZwWM8G?startTime=1622577759000)
+- [Delete Point, Add Image and Arcpy Functions Code & Problem Summary](https://docs.google.com/document/d/1M_Z_CsDiofBDTfKk90UqYVvr0tdX1bTKGgrj6BmwBwM/edit?usp=sharing)
+- [Delete Point, Add Image and Arcpy Functions Tutorial Video](https://drive.google.com/file/d/1sJbeeLGge0T8u1jAsbUwzlFoZrs-EP5N/view?usp=sharing)
