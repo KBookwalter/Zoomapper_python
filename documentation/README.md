@@ -89,3 +89,8 @@ Inside zoo.py you will find the rest of the program, which includes the code for
   ```
 
   * and this is the other branch of code where we just generate the plot with all points as the same color
+
+
+GIS related information (Fall 2021)
+
+The current arcpy is based on python2.7, but the Zoomapper is written by python3.7. Python 2 is not compitible with Python 3. We have set a way to call python 2 from python 3. The detailed step of generating Minimum bounding Geometry and Kernel Density need to be simplize. We are out of time to make Zoomapper display the shp file which generate by python code, so these two functions still need to be displayed with a ARCGIS related software. Also, the delete point function has minor bugs after we assembly the GIS function. The georeferencing image need to be finalized.
